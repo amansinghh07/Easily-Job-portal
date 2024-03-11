@@ -1,6 +1,31 @@
 :root{
-    --background: #085db2;
+    --background: #304262;
 }
 body{
     background-color: var(--background);
 }
+#custom a{
+    color: aliceblue;
+    font-size: large;
+    font-weight: bolder;
+}
+#drop a{
+    color: black;
+}
+#job-list {
+    color: aliceblue;
+}
+#job-list h1{
+    color:bisque;
+}
+#custom-border {
+    border-width: 2px; /* Adjust the width of the border */
+    border-style: solid; /* Choose the style of the border */
+    border-color: lightgray; /* Choose the color of the border */
+    /* Optionally, you can add other properties to customize the border */
+    /* For example: */
+    border-radius: 5px; /* Rounded border */
+    height: 350px; /* Adjust the height of the element */
+    width: 270px; /* Adjust the width of the element */
+  }
+  
