@@ -1,10 +1,10 @@
-:root{
+/* :root{
     --background: #304262;
 }
 body{
     background-color: var(--background);
-}
-#custom a{
+} */
+#cust a{
     color: aliceblue;
     font-size: large;
     font-weight: bolder;
@@ -13,6 +13,9 @@ body{
     color: black;
 }
 #job-list {
+    color: aliceblue;
+}
+#register-page{
     color: aliceblue;
 }
 #job-list h1{
@@ -25,7 +28,13 @@ body{
     /* Optionally, you can add other properties to customize the border */
     /* For example: */
     border-radius: 5px; /* Rounded border */
-    height: 350px; /* Adjust the height of the element */
+    height: 300px; /* Adjust the height of the element */
     width: 270px; /* Adjust the width of the element */
   }
-  
+  .btn.btn-success:hover {
+    background-color: #8a5b04; /* New hover color for success buttons */
+    /* You can adjust the color value to your preference */
+}
+#errorpage{
+    background-size: cover;
+}

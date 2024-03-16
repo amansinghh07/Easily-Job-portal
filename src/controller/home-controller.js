@@ -7,4 +7,18 @@ export default class Portal {
     let jobs = JobsModal.get();
     res.render("job-list", { job: jobs, errorMessage: null });
   }
+  viewmore(req, res) {
+    const jobId = req.params.id;
+    const jobObj = JobsModal.getJobbyId(jobId);
+    console.log(jobObj);
+    const numberOfApplicants = JobsModal.get().length;
+    console.log(numberOfApplicants);
+    return res.render("more-details", {
+      jobObj,
+      numberOfApplicants,
+    });
+  }
+  postCreateJob(req,res){
+    
+  }
 }

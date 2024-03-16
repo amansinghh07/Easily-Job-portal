@@ -6,9 +6,10 @@ export default class JobsModal {
     location,
     company,
     CTC,
-    Job_posted,
+    applyBy,
     skills,
-    numberOfOpenings
+    numberOfOpenings,
+    recuriterEmail
   ) {
     this.id = id;
     this.type = type;
@@ -16,12 +17,21 @@ export default class JobsModal {
     this.location = location;
     this.company = company;
     this.CTC = CTC;
-    this.Job_posted = Job_posted;
+    this.applyBy = applyBy;
     this.skills = skills;
     this.numberOfOpenings = numberOfOpenings;
+    this.recuriterEmail = recuriterEmail;
+  }
+  pushJobs(formdata,recuriterEmail){
+    const newjob=new JobsModal()
   }
   static get() {
     return jobStructureArray;
+  }
+  static getJobbyId(id) {
+    const user = jobStructureArray.find((j) => j.id == id);
+    console.log(user);
+    return user;
   }
 }
 

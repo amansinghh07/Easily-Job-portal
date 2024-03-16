@@ -1,11 +1,12 @@
 export default class Usermodal{
-    constructor(id,email,password){
+    constructor(id,name,email,password){
     this.id=id;
+    this.name=name;
     this.email=email;
     this.password=password
     }
-    static adduser(email,password){
-        const newUser=new Usermodal(users.length+1,email,password);
+    static adduser(name,email,password){
+        const newUser=new Usermodal(users.length+1,name,email,password);
         users.push(newUser);
     }
         static verifyuser(email,password){
